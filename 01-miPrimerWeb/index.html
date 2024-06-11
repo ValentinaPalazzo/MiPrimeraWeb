@@ -1,0 +1,76 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <!-- etiqueta simple -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="description" content="blog sobre tecnologias web HTML5 Y CSS3">
+    <meta name="author" content="Maria Valentina Palazzo Lobo">                   
+    <meta name="keywords" content="listas,tablas,estructura html, estilo en cascada, selectores">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    
+
+    <!-- simpre tengo que link la hoja de estilo y debo cambiar la direccion a donde esta debo poner./ q me lleva a un directorio-->
+    <title>Mi Primer Web</title>
+    <!-- aparece en el cosito de mi buscador -->
+</head>
+<!--puedo comentar dentro de esto, no la lee como un  block de notas -->
+<!--zona informativa, hojas de estilo, favicon-->
+<body>
+    <!-- todo lo que el usuario final visualiza, se lo divide en 3 partes encabezado curpo y pie de pagina -->
+  <header>
+    <nav>
+         <!--etiqueta a es el hipervinculo tiene varios atributos  -->
+      <a href="./index.html" class="marcar">Inicio</a>
+      <a href="./pages/Elementos.html">Elementos</a>
+      <a href="./pages/Flexbox.html">Flexbox</a>
+      <a href="./pages/Positions.html">Positions</a>
+      <a href="./pages/contactos.html">Contactos</a>
+         <!-- las etiquetas a tienen un comportamiento predefinido linial un ej de etiqueta de bloque es nav -->
+    </nav>
+ </header>
+ <main>
+        <!-- etiqueta semantica contenedora de la img (img es la etiqueta) -->
+   <figure class="banner">
+        <img src="./images/banner5.png" alt="Banner proyecto blog">
+        <!-- hay q cargar at alt es frase corta que describa la imagen insertada -->
+   </figure>
+<section class="contenedorPrincipal">
+   
+    <h1>Desarollo web con HTML5 y CSS3</h1>
+    <!-- solo un titulo con h1 solo repito desde h2 al 6, decrecen en el orden de importanxia es imp para el sentido semantico, si hay mas de uno se considera un error -->
+    <p>La programación web con HTML, CSS y JavaScript es un enfoque integral para la creación de sitios y aplicaciones web interactivas y atractivas. HTML proporciona la estructura básica del contenido web, mientras que CSS dicta su presentación y estilo, y JavaScript agrega dinamismo y funcionalidad. Esta combinación de tecnologías es fundamental para construir experiencias web modernas y receptivas que satisfagan las necesidades de los usuarios en la era digital.</p>
+     <!--codigo de tarea, las etiquetas h1 y p son en bloque y por lo tanto aparecen una abajo de la otra  -->
+  <article>
+    <h2 id="tituloDestacado">Lenguaje de marcado de hipertexto HTML </h2>
+    <p>HTML es el lenguaje de marcado utilizado para crear la estructura y el contenido de la página web. Se compone de elementos, etiquetas y atributos que definen la disposición y jerarquía del contenido.    </p>
+    <ul>
+        <!-- cuando quiero dar estetica uso spam b y stong son parecidas pero strong es semantica envuelvo palabras imp en el proyecto quiero q la pagina sepa eso si solo sea negrita usamos b y evitamos strong ojo-->
+      <li>Encabezado: Se define utilizando la etiqueta <b> &lt;head&gt; </b>. Aquí se incluyen elementos como el título de la página, metadatos (como la codificación de caracteres y la descripción de la página) y enlaces a hojas de estilo CSS y otros recursos.&#x1F388;</li>
+      <li>Cuerpo: Se define con la etiqueta <b> &lt;body&gt; </b> . Aqui es donde se coloca todo el contenido visible de la página, como encabezados, párrafos, imágenes, enlaces y otros elementos. </li>
+      <li>Pie de pagina: Se define con la etiqueta <b>&lt;footer&gt;</b>. Es un contenedor que suele contener información de naturaleza secundaria o complementaria sobre el sitio web, como por ejemplo: información de contacto, enlaces adicionales, créditos, etc.</li>
+      <li>Etiquetas: Los elementos HTML se crean con etiquetas, como <b>&lt;h1&gt;</b> para encabezados principales, <b>&lt;p&gt;</b> para párrafos,<b>&lt;img&gt;</b> para imágenes y <b>&lt;a&gt;</b> para enlaces.</li>
+    </ul>
+  </article>
+  <article>
+      <h2>CSS - Hojas de estilo en cascada</h2>
+    <p>CSS es el lenguaje utilizado para dar estilo y diseño a la página web. Permite controlar la apariencia de los elementos HTML, como colores, fuentes, tamaños, márgenes y posicionamiento.</p>
+    <ol>
+      <li> Selectores: Los selectores de CSS identifican los elementos HTML a los que se aplicarán los estilos. Pueden ser selectores de etiquetas (como h1, p, img), de clases (como .encabezado, .contenedor) o de identificadores (como #menu, #pie).</li>
+      <li>Propiedades: Las propiedades de CSS definen cómo se verán los elementos seleccionados. Por ejemplo, color define el color del texto, font-family establece la fuente del texto, margin define los márgenes y background establece el color de fondo.</li>
+      <li>Valores: Los valores son asignados a las propiedades y determinan cómo se mostrará el elemento. Por ejemplo, el valor blue para color establecerá el texto en azul, y 20px para font-size establecerá el tamaño del texto en 20 píxeles.</li>
+    </ol>
+  </article>
+</section>
+</main>
+    <!-- aca se mete lo principal y la info aparte tamb como puede ser publicidad -->
+    <!-- etiqueta br es para hacer espacio se usa en situaciones determinadaspor ejemplo punto a parte en un mismo parrafo-->
+    <footer>
+    <p>&copy;RollingCode 2024 - todos los derechos reservados</p>
+        <!-- caracteres especiales hay qye agregarlos como entidades -->
+    </footer>
+    <div>
+</body>
+</html>

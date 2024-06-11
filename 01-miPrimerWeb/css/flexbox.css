@@ -1,0 +1,144 @@
+.rectangulo{
+    width: 300px;
+    height: 100px;
+    border: 1px solid rgba(0, 0, 0, 0.288);
+    background-color: rgb(175, 214, 249);
+    text-align: center;
+
+}
+h2{text-align: center;}
+h3{text-align: center;}
+
+:root {
+    --color-primary: #ededed;
+    --color-secondary: #9588f8;
+    }
+
+.contenedorPadre{background-color: var(--color-primary);
+                 border: 3px solid var(--color-secondary);
+                 display: flex;
+                 flex-direction: row;
+                 flex-wrap: wrap;
+                 justify-content: space-evenly;
+                padding: 4px;
+                }
+
+.contenedorPadre-spacearound{background-color: var(--color-primary);
+                             border: 3px solid var(--color-secondary);
+                             display: flex;
+                             flex-direction: row;
+                             flex-wrap: wrap;
+                            justify-content: space-around;
+                            padding: 4px;
+                            } 
+
+
+.contenedorPadre-spacebeetwen{background-color: var(--color-primary);
+                              border: 3px solid var(--color-secondary);
+                              display: flex;
+                              flex-direction: row;
+                              flex-wrap: wrap;
+                              justify-content: space-between;
+                            padding: 4px;}
+                              
+                              
+                    
+.align-content{background-color: var(--color-primary);
+    height: 350px;
+    border: 3px solid var(--color-secondary);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: center;
+     }
+
+.align-content-flex-start{background-color: var(--color-primary);
+        height: 350px;
+        border: 3px solid var(--color-secondary);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        justify-content: center;
+         }
+
+.align-content-flex-end{background-color: var(--color-primary);
+            height: 350px;
+            border: 3px solid var(--color-secondary);
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-content: flex-end;
+            justify-content: center;
+             }
+
+.align-content-flex-end{background-color: var(--color-primary);
+                height: 350px;
+                border: 3px solid var(--color-secondary);
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-content: flex-end;
+                justify-content: center;
+                 }
+    
+.align-content-space-between{background-color: var(--color-primary);
+                    height: 350px;
+                    border: 3px solid var(--color-secondary);
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    align-content: space-between;
+                    justify-content: center;
+                    }
+        
+.align-items-center{background-color: var(--color-primary);
+                        height: 350px;
+                        border: 3px solid var(--color-secondary);
+                        display: flex;
+                        flex-wrap: wrap;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: center;
+                         }
+                
+.align-items-strech{background-color: var(--color-primary);
+                    height: 350px;
+                    border: 3px solid var(--color-secondary);
+                    display: flex;
+                    flex-direction: row;
+                    align-items: stretch;
+                             }
+
+.divsStrech{    
+    width: 400px;
+    border: 1px solid rgba(0, 0, 0, 0.288);
+    background-color: rgb(228, 106, 255);
+    text-align: center;
+}
+
+
+.rectangulo-que-aparecen-arriba{
+    width: 300px;
+    height: 100px;
+    border: 1px solid rgba(0, 0, 0, 0.288);
+    background-color: rgb(175, 214, 249);
+    text-align: center;
+    display: flex;
+    order: -1;
+    }
+
+.contenedorPadreSuelto{background-color: var(--color-primary);
+        border: 3px solid var(--color-secondary);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+       padding: 4px;
+       
+       }
+                                             
+
+#divGrow{ flex-grow: 1;} 
+

@@ -1,0 +1,179 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="description" content="blog sobre tecnologias web HTML5 Y CSS3">
+    <meta name="author" content="Maria Valentina Palazzo Lobo">                   
+    <meta name="keywords" content="listas,tablas,estructura html, estilo en cascada, selectores">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/flexbox.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <title>Mi Primer Web</title>
+</head>
+<body>
+ <header>
+        <nav>
+         <a href="../index.html">Inicio</a>
+         <a href="./Elementos.html">Elementos</a>
+         <a href="./Flexbox.html" class="marcar">Flexbox</a>
+         <a href="./Positions.html">Positions</a>
+         <a href="./contactos.html">Contactos</a>
+         <a href="#order">Order</a>
+        </nav>
+ </header>
+
+ <main class="contenedorPrincipal">
+     
+  <h1>Flexbox</h1>
+      
+  <section>
+      
+   <h2>Display:flexbox</h2>
+      
+<article class="contenedorPadre">
+            <div class="rectangulo">1</div>
+            <div class="rectangulo">2</div>
+            <div class="rectangulo" id="divGrow">3</div>
+            <div class="rectangulo">4</div>
+            <div class="rectangulo">5</div>
+            <div class="rectangulo">6</div>
+</article>
+      
+     <h2>justify content:space around</h2>
+       
+<article class="contenedorPadre-spacearound">
+            <div class="rectangulo">1</div>
+            <div class="rectangulo">2</div>
+            <div class="rectangulo">3</div>
+            <div class="rectangulo">4</div>
+            <div class="rectangulo">5</div>
+            <div class="rectangulo">6</div>
+</article>
+      
+     <h2>justify content:space around</h2>
+      
+<article class="contenedorPadre-spacebeetwen">
+            <div class="rectangulo">1</div>
+            <div class="rectangulo">2</div>
+            <div class="rectangulo">3</div>
+            <div class="rectangulo">4</div>
+            <div class="rectangulo">5</div>
+            <div class="rectangulo">6</div>
+</article>
+        
+    <h2>Align-content</h2>
+        
+<article class="align-content">
+            <div class="rectangulo">1</div>
+            <div class="rectangulo">2</div>
+            <div class="rectangulo">3</div>
+            <div class="rectangulo">4</div>
+            <div class="rectangulo">5</div>
+            <div class="rectangulo">6</div>
+</article>
+        
+    <h2>Practica para realizar en casa</h2>
+        
+    <h3>Align-content flex start</h3>
+        
+<article class="align-content-flex-start">
+            <div class="rectangulo">1</div>
+            <div class="rectangulo">2</div>
+            <div class="rectangulo">3</div>
+            <div class="rectangulo">4</div>
+            <div class="rectangulo">5</div>
+            <div class="rectangulo">6</div>
+</article>
+        
+    <h3>Align-content flex end</h3>
+        
+<article class="align-content-flex-end">
+            <div class="rectangulo">1</div>
+            <div class="rectangulo">2</div>
+            <div class="rectangulo">3</div>
+            <div class="rectangulo">4</div>
+            <div class="rectangulo">5</div>
+            <div class="rectangulo">6</div>
+</article>
+        
+    <h3>Align-content space between</h3>
+        
+<article class="align-content-space-between">
+          <div class="rectangulo">1</div>
+          <div class="rectangulo">2</div>
+          <div class="rectangulo">3</div>
+          <div class="rectangulo">4</div>
+          <div class="rectangulo">5</div>
+          <div class="rectangulo">6</div>
+</article>
+    
+<article>
+        
+    <h2>Align-items</h2>
+    
+    <p>La propiedad align-items en CSS se utiliza dentro de un contenedor flexible &lpar; display:flex &rpar; para alinear los elementos secundarios &lpar; hijos &rpar; a lo largo del eje secundario &lpar; o transversal &rpar; del contenedor. Este eje perpendicular al eje principal, que es definido por la propiedad flex-direction &lpar; ya sea en fila o en columna &rpar; <br> Los valores que puede tomar son los siguientes:</p>
+    
+     <ol>
+            <li>flex-start:Los elementos secundarios se alinean al inicio del contenedor flexible en el eje transversal.</li>
+            <li>flex-end:Los elementos secundarios se alinean al final del contenedor flexible en el eje transversal</li>
+            <li>center:Los elementos secundarios se alinean en el centro del contenedor flexible del eje transversal.</li>
+            <li>base-line:Los elementos secundarios se alinean en su linea base común dentro del contenedor flexible</li>
+            <li>strech:Los elementos secundarios se estiran para ocupar todo el espacio disponible en el eje transversal del contenedor.</li>
+        </ol>
+    
+</article>
+    
+    <h3>Align-items: Center</h3>
+    
+<article class="align-items-center">
+        <div class="rectangulo">1</div>
+        <div class="rectangulo">2</div>
+        <div class="rectangulo">3</div>
+        <div class="rectangulo">4</div>
+</article>
+    
+    <h2>Align-items: Strech</h2>
+    
+    <p>En este ejemplo definir otra clase para crear las cajitas 1,2,3, y 4, donde solo establecemos width y no una altura &lpar;height&rpar;</p>
+    
+<article class="align-items-strech">
+        <div class="divsStrech">1</div>
+        <div class="divsStrech">2</div>
+        <div class="divsStrech">3</div>
+        <div class="divsStrech">4</div>
+    
+</article>
+    
+    <h2 id="order">Propiedades que se aplican a los items hijos </h2>
+    
+    <h3>propiedad de items hijos: order</h3>
+    
+    <p>La propiedad order en CSS Flexbox se utiliza para cambiar el orden de los elementos secundarios&lpar;hijos&rpar; dentro de un contenedor flexible sin cambiar el orden en el código HTML. Esta propiedad toma un valor numerico que determina el orden en el que se renderizaran los elementos dentro del contenedor flexible.
+        <br> Por defecto todos los elementos secundarios tienen un valor de orden 0. Al asignar un valor numérico diferente a la propiedad order, se puede especificar un nuevo orden de visualizacion para ese elemento. Los elementos con un valor de orden más bajo se muestran antes que los elementos con un valor de ordenar más alto.
+        <br>Por ejemplo, si tienes tres elementos secundarios dentro de un contenedor flexible y quieres que el tercero se muestre primero, puedes establecer su propiedad ordenar en -1, mientras que los otros elementos pueden permanecer con el valor predeterminado de 0. 
+        <br>En resumen, la propiedad order de Flexbox es una manera conveniente de cambiar el orden visual de los elementod secundarios dentro de un contenedor flexible sin alterar su orden en el codigo HTML.</p>
+  
+<article class="contenedorPadreSuelto">
+            <div class="rectangulo">1</div>
+            <div class="rectangulo-que-aparecen-arriba">2</div>
+            <div class="rectangulo-que-aparecen-arriba">3</div>
+            <div class="rectangulo-que-aparecen-arriba">4</div>
+            <div class="rectangulo-que-aparecen-arriba">5</div>
+            <div class="rectangulo">6</div>
+</article>
+
+</section>
+        
+</main>
+    
+<footer>
+    <p>&copy;RollingCode 2024 - todos los derechos reservados</p>
+    
+</footer>
+    
+<div></div>
+
+</body>
+</html>

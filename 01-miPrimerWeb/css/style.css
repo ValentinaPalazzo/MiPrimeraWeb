@@ -1,0 +1,187 @@
+/* lo primero que hago es resetear los espacios usando un selector universal */
+/* definir variable  en el root de hoja de estilo*/
+root{--v:#36a18fc3}
+/* clase de consulta no me funciona */
+p{ margin: 0px 5px 0px 5px}
+
+*{margin: 0px;
+  padding:0px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  }
+/* selector +llaves+ valor+;/ modelo de cajas=todas las etiquetas estan compuestas por un rectangulo y hay un espacio del vorde hacia afuera que se llama margin
+el padding es del borde hacia adentro de cadda uno de esos lados por eso le sacamos esos espacios para trabajar desde 0 */
+/* para nav uso el selector de etiqueta q selecciona todas con el mismo nombre */
+
+/* ------------B DE NAV ----------- */
+
+nav{
+    background:#36a18fc3;
+    padding:25px 30px 25px 30px;
+    font-size: large;
+    text-align: end;
+    word-spacing: 30px;
+    }
+
+nav a{
+    color: rgb(255, 255, 255)
+     }
+.marcar{font-weight:bold;
+        background-color: #05584c;
+        padding: 25px 5px 25px 5px;
+        color:#49e5cbc3 ;
+      }
+
+      nav a:hover{color:rgb(227, 235, 115);
+      background-color: #05584c3e;
+    padding: 25px 5px 25px 5px;
+    
+    }
+
+/* ------------PIE DE PAG.--------------- */
+
+footer{background: #05584bc3;
+       color: #49e5cbc3;
+       padding-top: 15px;
+       padding-bottom: 15px;
+       text-align: center;
+      width: 100%;
+    }
+  
+
+    /*---------------- CONTENIDO GENERAL------------------- */
+
+body{min-height: 100vh;
+     display: flex;
+    flex-direction: column;
+    font-family: "Ubuntu";
+    }
+
+main{flex-grow: 1;}    
+      /* uso margin para separar elementos uso pading cunado quiero hacer crecer elementos o achicar pero puedo en otra pag usar el mismo por ej en idex y elementos */
+.contenedorPrincipal{
+                     margin: 30px;
+                     padding: 20px;
+                    
+                    }
+                    /* solo puedo tener un elemento si uso el selector id es un herror de codigo esta mal echo */
+#tituloDestacado{color:#36a18fc3;}
+
+#tituloDestacado::first-letter{font-size: 30px;}
+
+
+p,h1,h2,h3,h4,h5,h6{
+                     margin-bottom: 10px;
+
+                    }
+  h1{text-align: center;
+      font-size: 30px;
+    }
+
+
+    img{margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    }
+
+    .banner{height: 400px;}
+    
+    
+    /* ----ELEMENTOS PAG--------- */
+
+     .boton{
+      margin: 5px;
+      padding: 10px;
+      border-radius: 20px; 
+      box-shadow: 5px 5px 0px rgba(128, 128, 128, 0.37);
+    
+             }
+     #colorb1{
+      background-color: rgb(104, 238, 158);
+     }
+     #colorb2{
+      background-color: rgb(243, 253, 135);
+     }
+     #colorb3{
+      background-color: rgb(154, 154, 249);
+     }
+     table{ 
+        border:1px solid black;
+      border-collapse: collapse; }
+
+        td,th{border:1px solid black;
+          padding: 4px;
+        }
+        th{background-color: #36a18fc3;}
+
+
+        tbody tr:nth-child(odd){
+          background: #07806e30;
+        }
+       tbody tr:nth-child(even){background-color:#56c3b267;}
+
+       input{display: block;}
+
+     fieldset{
+      margin-top: 10px;
+      width:100%;
+     }
+     
+     
+     ol,ul{ list-style-position: inside;}
+
+    
+input[type="checkbox"]{display: inline;
+margin: 10px;}
+input[type="radio"]{display: inline;
+margin: 10px;}
+
+#button{display: block;
+margin-top: 20px;
+border-radius: 30px;
+padding: 5px;
+}
+
+.contenedorListas{ width: 60%;
+                  display: flex;
+                  justify-content: space-between;
+                  flex-direction: row;
+                  flex-wrap: wrap;
+                  }
+
+.cambios-iconos{color:#48efd6;
+                font-size: 38px;}                  
+
+/* ------------------CONTACTOS---------------- */
+
+.consultaForm{
+           background-color: #36a18f3a;      
+           border: none;
+           width: 60%;
+           margin-bottom: 45px;
+           padding: 15px;
+
+input{ width: 100%;
+       border-radius: 5px;
+       border: none; 
+       padding: 5px;
+       background-color: #ffffffb3;
+     }
+ 
+     button[type="submit"]{margin-top: 10px;
+                         padding: 8px;
+                         background-color:#39ac99;
+                         border-radius: 4px;
+                         border: none;
+                         }
+
+   textarea{ width: 100%;
+             height: 8%;
+             resize: none;
+             border-radius: 5px;
+             border: none;
+             background-color: #ffffffb3;
+             display: block;}                      
+  } 

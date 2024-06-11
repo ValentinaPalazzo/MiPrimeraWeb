@@ -1,0 +1,36 @@
+article {border: 4px solid pink;
+    position: relative;
+    margin-bottom: 60px;}
+
+.cajas{
+       width: 250px;
+       height: 250px;
+       border-radius: 5px;
+       border: 3px solid rgb(60, 3, 60);
+       padding: 5px;}   
+       
+#colorCaja1{background-color: rgba(0, 255, 255, 0.196);
+           position:relative;
+           top: -30px;
+           left: 30px;
+           z-index: 1;} 
+
+#colorCaja2{background-color: rgba(127, 255, 212, 0.301); 
+            position: absolute;
+            z-index: 2;
+            left: 100px;
+            top: 0px;}
+
+#colorCaja3{background-color: rgba(95, 158, 160, 0.292);
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 3;}
+
+#pocicion-sticky{ 
+                 background-color: blueviolet;
+                 position: sticky;
+                 top: 10px;}
+
+
+ 
